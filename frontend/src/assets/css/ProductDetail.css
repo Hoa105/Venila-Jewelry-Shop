@@ -1,0 +1,136 @@
+.product-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 40px;
+  color: #222;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.product-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-thumbnail {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.product-info {
+  flex: 1 1 500px;
+}
+
+.product-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.product-price {
+  font-size: 22px;
+  color: #b76e79;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.add-to-cart-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 20px;
+  color: #624521;
+  font-size: 16px;
+  width: 300px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.add-to-cart-btn:hover {
+  opacity: 0.9;
+  background-color: #c5c5a6;
+}
+
+.product-variants {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử con */
+  align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+  flex-wrap: nowrap; /* Ngăn các nút xuống dòng */
+  overflow-x: auto; /* Cho phép cuộn ngang nếu có quá nhiều size */
+  padding-bottom: 10px; /* Thêm chút khoảng trống dưới để thanh cuộn (nếu có) không quá sát */
+}
+
+/* Điều chỉnh lại phần tử p bên trong .product-variants nếu cần */
+.product-variants p:first-of-type {
+  /* Chỉ áp dụng cho dòng "Chọn Size:" */
+  margin-right: 10px; /* Tạo khoảng cách với nút đầu tiên */
+  white-space: nowrap; /* Đảm bảo chữ "Chọn Size:" không bị xuống dòng */
+  margin-bottom: 0; /* Bỏ margin dưới của chữ "Chọn Size:" */
+  margin-top: -18px;
+}
+
+/* .product-variants + p { 
+  margin-top: 10px; 
+} */
+
+/* Style chung cho các nút size */
+.variant-button {
+  background-color: #f0f0f0; /* Màu nền mặc định */
+  border: 1px solid #ccc; /* Viền mặc định */
+  padding: 8px 12px; /* Padding bên trong nút */
+  margin-right: 10px; /* Khoảng cách bên phải giữa các nút */
+  margin-bottom: 10px; /* Khoảng cách bên dưới giữa các hàng nút (nếu có wrap) */
+  cursor: pointer; /* Con trỏ hình bàn tay khi hover */
+  border-radius: 4px; /* Bo góc nhẹ */
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s; /* Hiệu ứng chuyển đổi mượt mà */
+  font-size: 14px; /* Cỡ chữ (có thể điều chỉnh) */
+  line-height: normal; /* Đảm bảo chiều cao dòng phù hợp */
+  color: #333; /* Màu chữ mặc định */
+  text-align: center; /* Căn giữa chữ trong nút (cho input) */
+  min-width: 50px; /* Chiều rộng tối thiểu để các nút trông đều hơn */
+}
+
+/* Style khi hover chuột lên nút (và nút không bị disabled) */
+.variant-button:hover:not(:disabled) {
+  background-color: #e0e0e0; /* Màu nền nhạt hơn khi hover */
+  border-color: #bbb; /* Màu viền nhạt hơn khi hover */
+}
+
+/* Style cho nút size đang được chọn */
+.variant-button.selected {
+  background-color: #846947; /* Màu nền đậm hơn khi được chọn (màu thương hiệu của bạn) */
+  color: white; /* Màu chữ trắng khi được chọn */
+  border-color: #846947; /* Màu viền trùng màu nền khi được chọn */
+  font-weight: bold; /* In đậm chữ */
+}
+
+/* Style cho nút size bị vô hiệu hóa (hết hàng) */
+.variant-button.disabled {
+  background-color: #e9e9e9; /* Màu nền xám nhạt */
+  color: #aaa; /* Màu chữ xám mờ */
+  cursor: not-allowed; /* Con trỏ báo không được phép */
+  border-color: #ddd; /* Màu viền nhạt */
+  /* Lưu ý: text-decoration: line-through không hoạt động trực tiếp
+     với value của <input type="button">.
+     Việc hiển thị "(Hết hàng)" trong value đã đủ rõ ràng. */
+}

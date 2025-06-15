@@ -1,0 +1,270 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  background-color: #f8f8f0 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  text-decoration: none;
+  color: #846947;
+  margin: 0;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  transition: font-size 0.3s ease;
+}
+
+.logo-image {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.logo a,
+.logo a:hover,
+.nav-links a:hover {
+  text-decoration: none !important;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  gap: 10px;
+  margin-left: 5%;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px 10px;
+  color: #555;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #846947;
+}
+
+.cart-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+.cart-link:hover {
+  color: #846947;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logout-button {
+  background: #eed687;
+  color: rgb(10, 10, 10);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.logout-button:hover {
+  background-color: #c82333;
+}
+.navbar-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+}
+
+.links {
+  display: flex;
+  gap: 120px;
+  list-style: none;
+}
+
+/* Small screens (phones, up to 576px) */
+@media (max-width: 576px) {
+  .navbar-top {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .links {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .nav-links {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 2px;
+  }
+
+  .search-container {
+    max-width: 200px;
+    margin-left: 0;
+  }
+
+  .search-input {
+    width: 100%;
+    gap: 2px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .search-login {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .navbar {
+    gap: 5px;
+  }
+}
+
+/* Medium screens (tablets, 577px to 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+  .navbar-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  */ .search-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .links {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 35px;
+  }
+
+  .search-login {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .navbar {
+    gap: 10px;
+  }
+}
+
+/* Large screens (desktops, 993px and up) */
+@media (min-width: 993px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .search-container {
+    margin-left: 5%;
+  }
+
+  .search-input {
+    width: 300px;
+  }
+  .navbar {
+    gap: 15px;
+  }
+}

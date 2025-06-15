@@ -1,0 +1,19 @@
+/* src/components/Banner.css hoặc file CSS tương ứng */
+
+.img-banner {
+  width: 100%;
+  display: block;
+}
+
+/* Có thể thêm CSS cho container của mỗi banner để căn giữa hoặc thêm padding */
+.banner-section {
+  margin-bottom: 3rem; /* Khoảng cách giữa các section banner */
+  padding: 0 1rem; /* Thêm padding ngang nếu cần */
+}
+
+.banner-section h1 {
+  text-align: center; /* Căn giữa tiêu đề */
+  margin-bottom: 1rem; /* Khoảng cách dưới tiêu đề */
+  font-size: 1.8rem; /* Cỡ chữ tiêu đề (điều chỉnh) */
+  color: #333; /* Màu chữ (điều chỉnh) */
+}

@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.style {
+  font-size: 18px;
+  line-height: 4;
+  gap: 15px;
+}
+
+.img-banner {
+  width: 100%;
+  display: block;
+}
+.product-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.button-container {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+button {
+  width: 180px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #e3e3c0;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+}
+select {
+  width: 180px;
+  height: 20px;
+  font-size: 18px;
+}
+
+.reset-button {
+  all: unset;
+  width: auto;
+  height: 18px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: normal;
+  border: 1px solid #999;
+}
+
+.cart-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #000000;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .cart-button {
+  width: 40px;
+  height: 30px;
+  font-size: 14px;
+  padding: 4px;
+  margin: 0 5px;
+  background-color: #ddd;
+  color: black;
+}
+
+.cart-button:hover {
+  background-color: #bbb;
+} */
+
+.form {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.input-group {
+  padding: 10px;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.links {
+  display: flex;
+  gap: 120px;
+  list-style: none;
+}

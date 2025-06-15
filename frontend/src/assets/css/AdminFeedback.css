@@ -1,0 +1,107 @@
+.admin-feedback-container {
+  display: flex;
+  height: 100%;
+}
+
+.admin-feedback-sidebar {
+  width: 250px;
+  border-right: 1px solid #ccc;
+  background: #fafafa;
+  padding: 0 0 16px 0;
+}
+
+.admin-feedback-sidebar h3 {
+  margin: 0;
+  padding: 16px 0 8px 16px;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-feedback-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-feedback-user {
+  cursor: pointer;
+  padding: 10px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+}
+
+.admin-feedback-user.selected,
+.admin-feedback-user:hover {
+  background: #e9ecef;
+}
+
+.admin-feedback-main {
+  flex: 1;
+  padding: 16px;
+  background: #fff;
+}
+
+.admin-feedback-history {
+  min-height: 200px;
+  border: 1px solid #eee;
+  margin-bottom: 12px;
+  padding: 8px;
+  background: #f8f9fa;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.admin-feedback-msg {
+  margin: 6px 0;
+  display: flex;
+}
+
+.admin-feedback-msg.user {
+  justify-content: flex-start;
+}
+
+.admin-feedback-msg.admin {
+  justify-content: flex-end;
+}
+
+.admin-feedback-msg-content {
+  display: inline-block;
+  background: #e9ecef;
+  color: #222;
+  border-radius: 8px;
+  padding: 6px 12px;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+.admin-feedback-msg.admin .admin-feedback-msg-content {
+  background: #e3e3c0;
+}
+
+.admin-feedback-input {
+  width: 80%;
+  margin-right: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.admin-feedback-btn {
+  padding: 8px 16px;
+  border: none;
+  background: #e3e3c0;
+  color: #000000;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.red-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  margin-left: 8px;
+}

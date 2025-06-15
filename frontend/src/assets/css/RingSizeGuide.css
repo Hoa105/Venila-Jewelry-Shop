@@ -1,0 +1,65 @@
+.ring-size-guide {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.ring-size-guide h2 {
+  text-align: center;
+  color: #c79c60;
+  margin-bottom: 30px;
+}
+
+.ring-guide-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.ring-guide-text {
+  flex: 1;
+  line-height: 1.6;
+}
+
+.ring-guide-text h3 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.ring-guide-text ul {
+  padding-left: 20px;
+}
+
+.ring-guide-text li {
+  margin-bottom: 8px;
+}
+
+.ring-guide-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ring-guide-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .ring-guide-content {
+    flex-direction: column;
+  }
+
+  .ring-guide-image {
+    margin-top: 20px;
+  }
+}
